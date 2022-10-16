@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="style.css">
+    <!--  <script src="https://use.fontawesome.com/c64dd3c883.js"></script>-->
+    <title>Pizza Machine</title>
+</head>
+
+<body>
+    <main>
+        <div class="pizza_container">
+            <h3 class="pizza_title">Pizza Machine 🍕🛎</h3>
+            <div class="pizza_menu">
+                <p>
+                <h5> Select a Pizza:</h5>
+                <select id="pizza">
+                    <optgroup>
+                        <option value="">Choose a pizza</option>
+                        <option value="sausage_pizza" id="sp">Sausage Pizza</option>
+                        <option value="chicken_pizza" id="cp">Chicken BBQ Pizza</option>
+                        <option value="pepperoni_pizza" id="pp">Pepperoni Pizza</option>
+                        <option value="meat_pizza" id="mp">Meat-lover's Pizza</option>
+                        <option value="greek_pizza" id="gp">Greek Pizza</option>
+                    </optgroup>
+                </select>
+                </p>
+                <div class="action_button">
+                    <button type="submit" id="prepare">Prepare</button>
+                    <button type="submit" id="reset" onclick="location.reload()">Reset Order</button>
+                </div>
+
+            </div>
+            <p>
+            <h6 id="process"></h6>
+            </p>
+
+            <p>
+            <h3 id="ready"></h3>
+            </p>
+        </div>
+        <div class="pizza_gif">
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
